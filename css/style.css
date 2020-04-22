@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
 }
 .container {
@@ -12,9 +12,11 @@
 }
 .left {
   grid-area: 1/1/1/4;
+  display: flex;
+  flex-direction: column;
 }
 .avatar {
-  background: #383737;
+  background: #3b3b3b;
   color: white;
   display: flex;
   flex-direction: column;
@@ -29,23 +31,28 @@
   border-radius: 50%;
 }
 .avatar > p:nth-child(2) {
-  font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
 }
-.infomation  {
-  background: #e9e8e8;
+.infomation {
+  background: #4b4b4b;
+  color: white;
   padding: 2rem;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
+
 .contact img {
   height: 20px;
   width: auto;
 }
 .title {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 3rem;
   font-weight: bold;
- 
 }
 .contact > div,
 .title {
@@ -53,22 +60,68 @@
   align-items: center;
   font-size: 16px;
 }
-.contact > div > p {
+.contact > div > p,.infomation a {
+  color: white;
+  padding-left: 1rem;
   font-style: italic;
 }
-.contact p,
+
 .title p {
   font-size: 16px;
   padding-left: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.objective>p:nth-child(2){
+
+/* ////////////// */
+.skills>p{
+  padding-top: 10px;
+}
+.skill-bar {
+  background: #808080;
+}
+.skill {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: white;
+}
+.logical {
+  width: 95%;
+  background-color: #d3d3d3;
+}
+.debugs {
+  width: 75%;
+  background-color: #d3d3d3;
+}
+.speaking {
+  width: 50%;
+  background-color: #d3d3d3;
+}
+.typing {
+  width: 60%;
+  background-color: #d3d3d3;
+}
+.pressure {
+  width: 90%;
+  background-color: #d3d3d3;
+}
+.reading {
+  width: 70%;
+  background-color: #d3d3d3;
+}
+.searching {
+  width: 80%;
+  background-color: #d3d3d3;
+}
+
+
+/* //////////////// */
+.objective > p:nth-child(2) {
   text-indent: 2rem;
 }
 /* layout right */
 .right {
   grid-area: 1/4/1/11;
-  background: white;
+  background: #d4daca;
   padding: 2rem;
 }
 .right img {
@@ -79,12 +132,12 @@
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  padding-top: 10px;
 }
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-a{
+a {
   text-decoration: none;
-  color: blue;
 }
