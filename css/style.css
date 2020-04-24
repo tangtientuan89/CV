@@ -30,7 +30,6 @@
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  transform: rotate(0deg);
 }
 .avatar > p:nth-child(2) {
   font-size: 32px;
@@ -140,4 +139,36 @@ hr {
 }
 a {
   text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 992px){
+  .avatar > p:nth-child(2) {
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    padding: 1rem;
+  }
+  .avatar img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+  }
+  .left {
+
+    display: flex;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    line-height: 24px;
+    display: block;
+  }
+  .avatar img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
 }
