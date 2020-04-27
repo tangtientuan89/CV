@@ -10,7 +10,7 @@
   grid-template-columns: repeat(10, 10%);
   line-height: 24px;
 }
-.left {
+.container__left {
   grid-area: 1/1/1/4;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
   width: 200px;
   border-radius: 50%;
 }
-.avatar > p:nth-child(2) {
+.avatar__name {
   font-size: 32px;
   font-family: "Roboto", sans-serif;
   padding: 1rem;
@@ -46,7 +46,7 @@
   flex-grow: 1;
 }
 
-.contact img {
+.infomation__contact img {
   height: 20px;
   width: auto;
 }
@@ -55,13 +55,13 @@
   line-height: 3rem;
   font-weight: bold;
 }
-.contact > div,
+.infomation__contact > div,
 .title {
   display: flex;
   align-items: center;
   font-size: 16px;
 }
-.contact > div > p,.infomation a {
+.infomation__contact > div > p,.infomation a {
   color: white;
   padding-left: 1rem;
   font-style: italic;
@@ -74,42 +74,42 @@
 }
 
 /* ////////////// */
-.skills>p{
+.infomation__skill>p{
   padding-top: 10px;
 }
-.skill-bar {
+.skill__bar {
   background: #808080;
 }
-.skill {
+.bar {
   padding-top: 5px;
   padding-bottom: 10px;
   color: white;
 }
-.logical {
+.skill__bar--logical {
   width: 95%;
   background-color: #d3d3d3;
 }
-.debugs {
+.skill__bar--debugs {
   width: 75%;
   background-color: #d3d3d3;
 }
-.speaking {
+.skill__bar--speaking {
   width: 50%;
   background-color: #d3d3d3;
 }
-.typing {
+.skill__bar--typing {
   width: 60%;
   background-color: #d3d3d3;
 }
-.pressure {
+.skill__bar--pressure {
   width: 90%;
   background-color: #d3d3d3;
 }
-.reading {
+.skill__bar--reading {
   width: 70%;
   background-color: #d3d3d3;
 }
-.searching {
+.skill__bar--searching {
   width: 80%;
   background-color: #d3d3d3;
 }
@@ -118,12 +118,12 @@
   text-indent: 2rem;
 }
 /* layout right */
-.right {
+.container__right {
   grid-area: 1/4/1/11;
   background: #d4daca;
   padding: 2rem;
 }
-.right img {
+.container__right img {
   height: 30px;
   width: auto;
 }
@@ -144,7 +144,7 @@ a {
 
 
 @media screen and (max-width: 992px){
-  .avatar > p:nth-child(2) {
+  .avatar__name {
     font-size: 28px;
     font-family: "Roboto", sans-serif;
     padding: 1rem;
@@ -154,7 +154,7 @@ a {
     width: 180px;
     border-radius: 50%;
   }
-  .left {
+  .container__left {
 
     display: flex;
   }
