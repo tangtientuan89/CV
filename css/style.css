@@ -86,31 +86,31 @@
   color: white;
 }
 .skill__bar--logical {
-  width: 95%;
-  background-color: #d3d3d3;
-}
-.skill__bar--debugs {
   width: 75%;
   background-color: #d3d3d3;
 }
+.skill__bar--debugs {
+  width: 55%;
+  background-color: #d3d3d3;
+}
 .skill__bar--speaking {
-  width: 50%;
+  width: 40%;
   background-color: #d3d3d3;
 }
 .skill__bar--typing {
-  width: 60%;
+  width: 50%;
   background-color: #d3d3d3;
 }
 .skill__bar--pressure {
-  width: 90%;
-  background-color: #d3d3d3;
-}
-.skill__bar--reading {
   width: 70%;
   background-color: #d3d3d3;
 }
+.skill__bar--reading {
+  width: 50%;
+  background-color: #d3d3d3;
+}
 .skill__bar--searching {
-  width: 80%;
+  width: 60%;
   background-color: #d3d3d3;
 }
 /* //////////////// */
